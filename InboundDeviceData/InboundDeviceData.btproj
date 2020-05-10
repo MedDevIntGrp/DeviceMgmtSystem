@@ -47,10 +47,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DeviceMgmtOperationalSchemas\bin\Debug\DeviceMgmtSchemas.dll</HintPath>
     </Reference>
-    <Reference Include="MedicalDeviceSchemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ef08045097844ce8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MedicalDeviceManagement\bin\Debug\MedicalDeviceSchemas.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -100,6 +96,12 @@
       <TypeName>ProcessDeviceInfo_Copy</TypeName>
       <Namespace>InboundDeviceData</Namespace>
     </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalDeviceManagement\MedicalDeviceSchema.btproj">
+      <Project>{823fa683-678e-4a84-aa2e-e5f7488633c9}</Project>
+      <Name>MedicalDeviceSchema</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

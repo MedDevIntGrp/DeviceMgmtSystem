@@ -33,10 +33,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DeviceMgmtOperationalSchemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ef08045097844ce8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DeviceMgmtOperationalSchemas\bin\Debug\DeviceMgmtOperationalSchemas.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -81,6 +77,10 @@
     <ProjectReference Include="..\CommonSchemas\CommonSchemas.btproj">
       <Project>{83e5b222-2d90-48a4-abba-8d1aad1d58a7}</Project>
       <Name>CommonSchemas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeviceMgmtOperationalSchemas\DeviceMgmtOperationalSchemas.btproj">
+      <Project>{46a9c9e8-9190-402c-acce-e56fd76d87cb}</Project>
+      <Name>DeviceMgmtOperationalSchemas</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -2,28 +2,28 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="ef813928-c514-43b9-8f1d-c1c8e423a4fe" LowerBound="1.1" HigherBound="128.1">
+    <om:Element Type="Module" OID="ef813928-c514-43b9-8f1d-c1c8e423a4fe" LowerBound="1.1" HigherBound="136.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="OutboundfromFhirServer" />
         <om:Property Name="Signal" Value="False" />
-        <om:Element Type="PortType" OID="cea28e2e-24c8-4509-9149-9c9990399945" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="27.1">
+        <om:Element Type="PortType" OID="cea28e2e-24c8-4509-9149-9c9990399945" ParentLink="Module_PortType" LowerBound="24.1" HigherBound="31.1">
             <om:Property Name="Synchronous" Value="True" />
             <om:Property Name="TypeModifier" Value="Public" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="ReportRequestPortType" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="6df408e5-846f-4993-a45f-2555d5ebbe25" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+            <om:Element Type="OperationDeclaration" OID="6df408e5-846f-4993-a45f-2555d5ebbe25" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
                 <om:Property Name="OperationType" Value="RequestResponse" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="CreateReport" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="MessageRef" OID="7e5451b7-9915-4d97-9f58-dc8e27d95ec1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.40">
+                <om:Element Type="MessageRef" OID="7e5451b7-9915-4d97-9f58-dc8e27d95ec1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.40">
                     <om:Property Name="Ref" Value="OutboundfromFhirServer.ServiceRequestMultipartType" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="MessageRef" OID="8c49ab26-0f95-4a35-8a17-73a46e98f020" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.42" HigherBound="24.61">
+                <om:Element Type="MessageRef" OID="8c49ab26-0f95-4a35-8a17-73a46e98f020" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.42" HigherBound="28.61">
                     <om:Property Name="Ref" Value="OutboundfromFhirServer.ReportMultipartType" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Response" />
@@ -31,24 +31,24 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="PortType" OID="07874371-a764-43d4-bd02-831f5a2ac95f" ParentLink="Module_PortType" LowerBound="27.1" HigherBound="34.1">
+        <om:Element Type="PortType" OID="07874371-a764-43d4-bd02-831f5a2ac95f" ParentLink="Module_PortType" LowerBound="31.1" HigherBound="38.1">
             <om:Property Name="Synchronous" Value="True" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="FHIRPortType" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="06347d41-881d-4476-934b-4771b5417b7a" ParentLink="PortType_OperationDeclaration" LowerBound="29.1" HigherBound="33.1">
+            <om:Element Type="OperationDeclaration" OID="06347d41-881d-4476-934b-4771b5417b7a" ParentLink="PortType_OperationDeclaration" LowerBound="33.1" HigherBound="37.1">
                 <om:Property Name="OperationType" Value="RequestResponse" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="GET" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="MessageRef" OID="0da1efc1-ac44-4070-8f87-10cd6ef08a0d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="31.13" HigherBound="31.31">
+                <om:Element Type="MessageRef" OID="0da1efc1-ac44-4070-8f87-10cd6ef08a0d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="35.13" HigherBound="35.31">
                     <om:Property Name="Ref" Value="OutboundfromFhirServer.QueryMultipartType" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="MessageRef" OID="ae17cd95-3a70-41b0-bd80-f97b374133ec" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="31.33" HigherBound="31.53">
+                <om:Element Type="MessageRef" OID="ae17cd95-3a70-41b0-bd80-f97b374133ec" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="35.33" HigherBound="35.53">
                     <om:Property Name="Ref" Value="CommonSchemas.bundle" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Response" />
@@ -108,26 +108,47 @@
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
         </om:Element>
-        <om:Element Type="CorrelationType" OID="c14131b0-66e7-4cb5-b1c4-1e6c814fdcb2" ParentLink="Module_CorrelationType" LowerBound="34.1" HigherBound="38.1">
+        <om:Element Type="MultipartMessageType" OID="85136eea-8bd9-4c2a-aeaa-4a7b12a5cfd6" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ListMultipartType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="7e33a143-7679-4d26-9875-1dd93c34de8d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="System.Collections.Generic.IList`1" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ListMessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="c14131b0-66e7-4cb5-b1c4-1e6c814fdcb2" ParentLink="Module_CorrelationType" LowerBound="38.1" HigherBound="42.1">
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="SubjectCorrelationType" />
             <om:Property Name="Signal" Value="True" />
-            <om:Element Type="PropertyRef" OID="d7f77ec6-850d-43b5-9d55-0971c2067cf0" ParentLink="CorrelationType_PropertyRef" LowerBound="36.9" HigherBound="36.60">
+            <om:Element Type="PropertyRef" OID="d7f77ec6-850d-43b5-9d55-0971c2067cf0" ParentLink="CorrelationType_PropertyRef" LowerBound="40.9" HigherBound="40.60">
                 <om:Property Name="Ref" Value="DeviceMgmtOperationalSchemas.PropertySchema.subject" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="PropertyRef_1" />
                 <om:Property Name="Signal" Value="False" />
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="5f796728-7965-4cf8-a1ab-81ec42b6d026" ParentLink="Module_ServiceDeclaration" LowerBound="38.1" HigherBound="127.1">
+        <om:Element Type="ServiceDeclaration" OID="5f796728-7965-4cf8-a1ab-81ec42b6d026" ParentLink="Module_ServiceDeclaration" LowerBound="42.1" HigherBound="135.1">
             <om:Property Name="InitializedTransactionType" Value="True" />
             <om:Property Name="IsInvokable" Value="True" />
             <om:Property Name="TypeModifier" Value="Public" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="GetPatientObservationData" />
             <om:Property Name="Signal" Value="True" />
-            <om:Element Type="VariableDeclaration" OID="98acba3f-dc15-4a10-8423-663ed9b7b094" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="50.1" HigherBound="51.1">
+            <om:Element Type="VariableDeclaration" OID="d8842bbd-03b2-4eb2-8ad2-ae9075a2b241" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Collections.Generic.IList`1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Variable_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="98acba3f-dc15-4a10-8423-663ed9b7b094" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -135,7 +156,7 @@
                 <om:Property Name="Name" Value="query" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="VariableDeclaration" OID="e0e6d8b9-a872-4258-9d9d-beeb330e0c2f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="51.1" HigherBound="52.1">
+            <om:Element Type="VariableDeclaration" OID="e0e6d8b9-a872-4258-9d9d-beeb330e0c2f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -143,7 +164,7 @@
                 <om:Property Name="Name" Value="patientid" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="VariableDeclaration" OID="14e38a67-1c36-41d7-878c-1364afcd79b4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="52.1" HigherBound="53.1">
+            <om:Element Type="VariableDeclaration" OID="14e38a67-1c36-41d7-878c-1364afcd79b4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -151,40 +172,47 @@
                 <om:Property Name="Name" Value="encounterid" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="LongRunningTransaction" OID="471ce1a3-ae62-4c0b-bfc2-2b4cf9a73133" ParentLink="ServiceDeclaration_Transaction" LowerBound="39.19" HigherBound="39.69">
+            <om:Element Type="LongRunningTransaction" OID="471ce1a3-ae62-4c0b-bfc2-2b4cf9a73133" ParentLink="ServiceDeclaration_Transaction" LowerBound="43.19" HigherBound="43.69">
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Transaction_1" />
                 <om:Property Name="Signal" Value="False" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="96d9f8aa-599b-4ec6-bf06-cc303ad1e223" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="45.1" HigherBound="46.1">
+            <om:Element Type="MessageDeclaration" OID="c57c758e-fdda-498d-ae69-df5a32f1178e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="OutboundfromFhirServer.ListMultipartType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SortedList" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="96d9f8aa-599b-4ec6-bf06-cc303ad1e223" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
                 <om:Property Name="Type" Value="OutboundfromFhirServer.ObservationMultipartType" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Observation" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="bc629b69-0f18-4f9d-beb2-c397ccb8e17a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="46.1" HigherBound="47.1">
+            <om:Element Type="MessageDeclaration" OID="bc629b69-0f18-4f9d-beb2-c397ccb8e17a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
                 <om:Property Name="Type" Value="OutboundfromFhirServer.QueryMultipartType" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="FhirRestOperation" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="9e25d6ab-9b66-49ce-ae49-016529a46ba2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="47.1" HigherBound="48.1">
+            <om:Element Type="MessageDeclaration" OID="9e25d6ab-9b66-49ce-ae49-016529a46ba2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
                 <om:Property Name="Type" Value="OutboundfromFhirServer.ReportMultipartType" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="DiagnosticReport" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="672c46ac-2112-4ae6-b6d6-59a088bf74c3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="48.1" HigherBound="49.1">
+            <om:Element Type="MessageDeclaration" OID="672c46ac-2112-4ae6-b6d6-59a088bf74c3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
                 <om:Property Name="Type" Value="OutboundfromFhirServer.ServiceRequestMultipartType" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="ServiceRequest" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="0411a2ab-4a2f-4645-ab80-91ea53565367" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+            <om:Element Type="MessageDeclaration" OID="0411a2ab-4a2f-4645-ab80-91ea53565367" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
                 <om:Property Name="Type" Value="CommonSchemas.bundle" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -193,7 +221,7 @@
             </om:Element>
             <om:Element Type="ServiceBody" OID="916a345e-de4e-44a5-8a0c-10d2054225f5" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="2c0f0d26-c468-4fa2-9e82-520e0b9163b4" ParentLink="ServiceBody_Statement" LowerBound="58.1" HigherBound="60.1">
+                <om:Element Type="Receive" OID="2c0f0d26-c468-4fa2-9e82-520e0b9163b4" ParentLink="ServiceBody_Statement" LowerBound="64.1" HigherBound="66.1">
                     <om:Property Name="Activate" Value="False" />
                     <om:Property Name="PortName" Value="ReportRequestPort" />
                     <om:Property Name="MessageName" Value="ServiceRequest" />
@@ -203,47 +231,47 @@
                     <om:Property Name="Name" Value="Receive_ServiceRequest" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="VariableAssignment" OID="6ca55062-132b-4125-ae46-0cb62566f5c6" ParentLink="ServiceBody_Statement" LowerBound="60.1" HigherBound="64.1">
+                <om:Element Type="VariableAssignment" OID="6ca55062-132b-4125-ae46-0cb62566f5c6" ParentLink="ServiceBody_Statement" LowerBound="66.1" HigherBound="70.1">
                     <om:Property Name="Expression" Value="query = &quot;&quot;;&#xD;&#xA;patientid = &quot;&quot;;&#xD;&#xA;encounterid = ServiceRequest.ServiceRequestMessagePart.encounter.identifier.value.value;" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Expression_1" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="Scope" OID="f7ddb480-fdb6-46ba-8d2b-8e7dbd9d5ce0" ParentLink="ServiceBody_Statement" LowerBound="64.1" HigherBound="125.1">
+                <om:Element Type="Scope" OID="f7ddb480-fdb6-46ba-8d2b-8e7dbd9d5ce0" ParentLink="ServiceBody_Statement" LowerBound="70.1" HigherBound="133.1">
                     <om:Property Name="InitializedTransactionType" Value="True" />
                     <om:Property Name="IsSynchronized" Value="False" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="GenerateReport" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="VariableAssignment" OID="db70ee15-0d86-45d3-8011-596113d06799" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="71.1">
+                    <om:Element Type="VariableAssignment" OID="db70ee15-0d86-45d3-8011-596113d06799" ParentLink="ComplexStatement_Statement" LowerBound="75.1" HigherBound="77.1">
                         <om:Property Name="Expression" Value="query = &quot;/Observation?_patient=&quot; + patientid;" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Set Query" />
                         <om:Property Name="Signal" Value="True" />
                     </om:Element>
-                    <om:Element Type="Construct" OID="9a08f31b-b9bf-4265-9447-d09c5a42680f" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="77.1">
+                    <om:Element Type="Construct" OID="9a08f31b-b9bf-4265-9447-d09c5a42680f" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="83.1">
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Construct_Query" />
                         <om:Property Name="Signal" Value="True" />
-                        <om:Element Type="MessageAssignment" OID="ab3f40d1-caac-4823-a934-ed763029aeff" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="76.1">
+                        <om:Element Type="MessageAssignment" OID="ab3f40d1-caac-4823-a934-ed763029aeff" ParentLink="ComplexStatement_Statement" LowerBound="80.1" HigherBound="82.1">
                             <om:Property Name="Expression" Value="FhirRestOperation.FhirQueryMessagePart = query;" />
                             <om:Property Name="ReportToAnalyst" Value="False" />
                             <om:Property Name="Name" Value="FhirRestOperation" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="MessageRef" OID="2cb7893c-4f60-4972-88cb-bf647e1ebc12" ParentLink="Construct_MessageRef" LowerBound="72.31" HigherBound="72.48">
+                        <om:Element Type="MessageRef" OID="2cb7893c-4f60-4972-88cb-bf647e1ebc12" ParentLink="Construct_MessageRef" LowerBound="78.31" HigherBound="78.48">
                             <om:Property Name="Ref" Value="FhirRestOperation" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                     </om:Element>
-                    <om:Element Type="Scope" OID="87079380-4191-47d1-b9a9-f9ee9da012db" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="123.1">
+                    <om:Element Type="Scope" OID="87079380-4191-47d1-b9a9-f9ee9da012db" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="131.1">
                         <om:Property Name="InitializedTransactionType" Value="True" />
                         <om:Property Name="IsSynchronized" Value="False" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="GetObservations" />
                         <om:Property Name="Signal" Value="True" />
-                        <om:Element Type="VariableDeclaration" OID="57e15858-d13a-4e07-a7b8-fda3729a47b5" ParentLink="Scope_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                        <om:Element Type="VariableDeclaration" OID="57e15858-d13a-4e07-a7b8-fda3729a47b5" ParentLink="Scope_VariableDeclaration" LowerBound="86.1" HigherBound="87.1">
                             <om:Property Name="UseDefaultConstructor" Value="False" />
                             <om:Property Name="Type" Value="System.Decimal" />
                             <om:Property Name="ParamDirection" Value="In" />
@@ -251,7 +279,15 @@
                             <om:Property Name="Name" Value="count" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="Send" OID="3bdb1ff4-0f58-4d03-8121-74a50f6ff0ff" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="85.1">
+                        <om:Element Type="VariableDeclaration" OID="d90eb7f8-fce5-4747-87a6-580ac959fd01" ParentLink="Scope_VariableDeclaration" LowerBound="87.1" HigherBound="88.1">
+                            <om:Property Name="UseDefaultConstructor" Value="False" />
+                            <om:Property Name="Type" Value="System.Int32" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="intcounter" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="3bdb1ff4-0f58-4d03-8121-74a50f6ff0ff" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="92.1">
                             <om:Property Name="PortName" Value="FHIRPort" />
                             <om:Property Name="MessageName" Value="FhirRestOperation" />
                             <om:Property Name="OperationName" Value="GET" />
@@ -260,7 +296,7 @@
                             <om:Property Name="Name" Value="Send_FhirRestOperation" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="Receive" OID="fdc1fa3b-e048-42ea-9b08-d3b7f8b81b60" ParentLink="ComplexStatement_Statement" LowerBound="85.1" HigherBound="87.1">
+                        <om:Element Type="Receive" OID="fdc1fa3b-e048-42ea-9b08-d3b7f8b81b60" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="94.1">
                             <om:Property Name="Activate" Value="False" />
                             <om:Property Name="PortName" Value="FHIRPort" />
                             <om:Property Name="MessageName" Value="Bundle" />
@@ -270,107 +306,98 @@
                             <om:Property Name="Name" Value="Receive_Bundle" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="VariableAssignment" OID="87bb8b86-9d59-498b-8d31-6c6b14aa133b" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="89.1">
-                            <om:Property Name="Expression" Value="count = Bundle.total.value;" />
+                        <om:Element Type="VariableAssignment" OID="87bb8b86-9d59-498b-8d31-6c6b14aa133b" ParentLink="ComplexStatement_Statement" LowerBound="94.1" HigherBound="97.1">
+                            <om:Property Name="Expression" Value="count = Bundle.total.value;&#xD;&#xA;intcounter = System.Convert.ToInt32( count);" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="get count" />
-                            <om:Property Name="Signal" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
                         </om:Element>
-                        <om:Element Type="Scope" OID="91743232-3d3d-4043-a04d-396779aba85f" ParentLink="ComplexStatement_Statement" LowerBound="89.1" HigherBound="121.1">
-                            <om:Property Name="InitializedTransactionType" Value="True" />
-                            <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Element Type="Decision" OID="041e112a-c3ed-4526-81a7-950cb3c8fc5d" ParentLink="ComplexStatement_Statement" LowerBound="97.1" HigherBound="129.1">
                             <om:Property Name="ReportToAnalyst" Value="True" />
-                            <om:Property Name="Name" Value="CreateReport" />
+                            <om:Property Name="Name" Value="Has Data?" />
                             <om:Property Name="Signal" Value="True" />
-                            <om:Element Type="VariableDeclaration" OID="a3029f6a-cd64-47e3-95f4-337277e75a3b" ParentLink="Scope_VariableDeclaration" LowerBound="93.1" HigherBound="94.1">
-                                <om:Property Name="UseDefaultConstructor" Value="True" />
-                                <om:Property Name="Type" Value="System.Collections.Generic.SortedList`2" />
-                                <om:Property Name="ParamDirection" Value="In" />
+                            <om:Element Type="DecisionBranch" OID="53c250ad-d429-4853-a183-0fde1c4c840e" ParentLink="ReallyComplexStatement_Branch" LowerBound="98.29" HigherBound="129.1">
+                                <om:Property Name="Expression" Value="count &gt; 0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="sortedList" />
+                                <om:Property Name="Name" Value="true" />
                                 <om:Property Name="Signal" Value="True" />
-                            </om:Element>
-                            <om:Element Type="While" OID="b91754f2-3829-4e3c-991e-1dd39384a221" ParentLink="ComplexStatement_Statement" LowerBound="97.1" HigherBound="105.1">
-                                <om:Property Name="Expression" Value="(Bundle.total.value &lt;= count)" />
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="Loop_1" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="VariableAssignment" OID="b2e8db95-6f13-4b58-a804-5b66bc93274c" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="102.1">
-                                    <om:Property Name="Expression" Value="sortedList.Add(count, xpath(&quot;/*[local-name()='Bundle' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='entry' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='response' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='outcome' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='&lt;Any&gt;' and namespace-uri()='']&quot;));" />
+                                <om:Element Type="Scope" OID="91743232-3d3d-4043-a04d-396779aba85f" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="128.1">
+                                    <om:Property Name="InitializedTransactionType" Value="True" />
+                                    <om:Property Name="IsSynchronized" Value="False" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Name" Value="Expression_2" />
+                                    <om:Property Name="Name" Value="CreateReport" />
                                     <om:Property Name="Signal" Value="True" />
-                                </om:Element>
-                                <om:Element Type="VariableAssignment" OID="1e6e2d28-5d51-4472-9ea9-96ece273e5ed" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="104.1">
-                                    <om:Property Name="Expression" Value="count = count + count;" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Name" Value="Expression_3" />
-                                    <om:Property Name="Signal" Value="True" />
-                                </om:Element>
-                            </om:Element>
-                            <om:Element Type="Construct" OID="fc07faeb-a36e-4a21-b051-4ce21322cb10" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="111.1">
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="ConstructMessage_1" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="MessageAssignment" OID="edd89e9a-d8d2-4496-893c-edb1d6d660b0" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="110.1">
-                                    <om:Property Name="Expression" Value="SortedList.Add(sortedList.Values);" />
-                                    <om:Property Name="ReportToAnalyst" Value="False" />
-                                    <om:Property Name="Name" Value="MessageAssignment_2" />
-                                    <om:Property Name="Signal" Value="True" />
-                                </om:Element>
-                                <om:Element Type="MessageRef" OID="3dd40042-9db6-49c0-a37b-6c199ca38121" ParentLink="Construct_MessageRef" LowerBound="106.47" HigherBound="106.57">
-                                    <om:Property Name="Ref" Value="SortedList" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Signal" Value="False" />
-                                </om:Element>
-                            </om:Element>
-                            <om:Element Type="Construct" OID="f9f54302-15d5-4ccb-9c2e-947477b395bb" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="119.1">
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="Construct_DiagnosticReport" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="Transform" OID="3737b74b-83f0-4c38-92c6-936a57ee1c3e" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="116.1">
-                                    <om:Property Name="ClassName" Value="OutboundfromFhirServer.Observations__to_Report" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Name" Value="Transform_1" />
-                                    <om:Property Name="Signal" Value="True" />
-                                    <om:Element Type="MessagePartRef" OID="c239c7fa-f2a7-4ac6-9f8f-da8c25452d9c" ParentLink="Transform_InputMessagePartRef" LowerBound="115.148" HigherBound="115.154">
-                                        <om:Property Name="MessageRef" Value="Bundle" />
+                                    <om:Element Type="VariableDeclaration" OID="a3029f6a-cd64-47e3-95f4-337277e75a3b" ParentLink="Scope_VariableDeclaration" LowerBound="103.1" HigherBound="104.1">
+                                        <om:Property Name="UseDefaultConstructor" Value="False" />
+                                        <om:Property Name="Type" Value="System.Collections.Generic.IList`1" />
+                                        <om:Property Name="ParamDirection" Value="In" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
-                                        <om:Property Name="Name" Value="MessagePartReference_1" />
-                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Property Name="Name" Value="sortedList" />
+                                        <om:Property Name="Signal" Value="True" />
                                     </om:Element>
-                                    <om:Element Type="MessagePartRef" OID="45fe3d9a-b316-48f1-adb4-83cf37e51bbd" ParentLink="Transform_OutputMessagePartRef" LowerBound="115.52" HigherBound="115.96">
-                                        <om:Property Name="MessageRef" Value="DiagnosticReport" />
-                                        <om:Property Name="PartRef" Value="DiagnosticReportMessagePart" />
+                                    <om:Element Type="While" OID="b91754f2-3829-4e3c-991e-1dd39384a221" ParentLink="ComplexStatement_Statement" LowerBound="106.1" HigherBound="114.1">
+                                        <om:Property Name="Expression" Value="(Bundle.total.value &lt;= intcounter)" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
-                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Name" Value="Loop_1" />
                                         <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="VariableAssignment" OID="b2e8db95-6f13-4b58-a804-5b66bc93274c" ParentLink="ComplexStatement_Statement" LowerBound="109.1" HigherBound="111.1">
+                                            <om:Property Name="Expression" Value="sortedList.Insert(intcounter,xpath(&quot;/*[local-name()='Bundle' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='entry' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='response' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='outcome' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='&lt;Any&gt;' and namespace-uri()='' and count() = {intcounter})&quot;));&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Create List" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="1e6e2d28-5d51-4472-9ea9-96ece273e5ed" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="113.1">
+                                            <om:Property Name="Expression" Value="intcounter = intcounter + intcounter;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Increase Coiunter" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
                                     </om:Element>
-                                </om:Element>
-                                <om:Element Type="MessageAssignment" OID="9c6c2613-bace-4ba2-8ace-ff1593998983" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="118.1">
-                                    <om:Property Name="Expression" Value="xpath(DiagnosticReport,&quot;/*[local-name()='DiagnosticReport' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='conclusion' and namespace-uri()='http://hl7.org/fhir']/@*[local-name()='value' and namespace-uri()='' = sortedList.Values)&quot;)&quot;;" />
-                                    <om:Property Name="ReportToAnalyst" Value="False" />
-                                    <om:Property Name="Name" Value="MessageAssignment_1" />
-                                    <om:Property Name="Signal" Value="True" />
-                                </om:Element>
-                                <om:Element Type="MessageRef" OID="952bb054-6301-4b08-81f7-bb0e89d066dd" ParentLink="Construct_MessageRef" LowerBound="112.47" HigherBound="112.63">
-                                    <om:Property Name="Ref" Value="DiagnosticReport" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="fc07faeb-a36e-4a21-b051-4ce21322cb10" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="120.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessageAssignment" OID="edd89e9a-d8d2-4496-893c-edb1d6d660b0" ParentLink="ComplexStatement_Statement" LowerBound="117.1" HigherBound="119.1">
+                                            <om:Property Name="Expression" Value="SortedList.ListMessagePart = sortedList;&#xD;&#xA;" />
+                                            <om:Property Name="ReportToAnalyst" Value="False" />
+                                            <om:Property Name="Name" Value="MessageAssignment_2" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="3dd40042-9db6-49c0-a37b-6c199ca38121" ParentLink="Construct_MessageRef" LowerBound="115.51" HigherBound="115.61">
+                                            <om:Property Name="Ref" Value="SortedList" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Construct" OID="f878b544-11ff-470b-8609-8452ada1a72f" ParentLink="ComplexStatement_Statement" LowerBound="120.1" HigherBound="126.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_2" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="0f7a6ab6-d92a-485a-976e-ada5a95c1da5" ParentLink="ComplexStatement_Statement" LowerBound="123.1" HigherBound="125.1">
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_1" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="e51eb16d-3531-49c9-ac0f-3ab2e01dba08" ParentLink="Construct_MessageRef" LowerBound="121.51" HigherBound="121.67">
+                                            <om:Property Name="Ref" Value="DiagnosticReport" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="MessageDeclaration" OID="1cc01721-bbc7-4aec-8566-f2a11f9a1798" ParentLink="Scope_MessageDeclaration" LowerBound="92.1" HigherBound="93.1">
-                                <om:Property Name="Type" Value="System.Collections.Generic.SortedSet`1" />
-                                <om:Property Name="ParamDirection" Value="In" />
+                            <om:Element Type="DecisionBranch" OID="d7554dde-d0cb-4fd9-a6e2-7a0e11129627" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="SortedList" />
-                                <om:Property Name="Signal" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
                             </om:Element>
                         </om:Element>
                     </om:Element>
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="276686ff-f02a-4ece-993f-cf328aec1768" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+            <om:Element Type="PortDeclaration" OID="276686ff-f02a-4ece-993f-cf328aec1768" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="45.1" HigherBound="47.1">
                 <om:Property Name="PortModifier" Value="Implements" />
                 <om:Property Name="Orientation" Value="Left" />
                 <om:Property Name="PortIndex" Value="-1" />
@@ -382,11 +409,11 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="ReportRequestPort" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="183749b4-8125-49a4-ae67-72e85bf53e86" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                <om:Element Type="LogicalBindingAttribute" OID="183749b4-8125-49a4-ae67-72e85bf53e86" ParentLink="PortDeclaration_CLRAttribute" LowerBound="45.1" HigherBound="46.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="fd0cccc8-faa9-4a78-8762-d20cabfb3ba8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="43.1" HigherBound="45.1">
+            <om:Element Type="PortDeclaration" OID="fd0cccc8-faa9-4a78-8762-d20cabfb3ba8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="47.1" HigherBound="49.1">
                 <om:Property Name="PortModifier" Value="Uses" />
                 <om:Property Name="Orientation" Value="Right" />
                 <om:Property Name="PortIndex" Value="30" />
@@ -398,7 +425,7 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="FHIRPort" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="77e2f19d-0308-4bce-b0c4-429e0fef4c99" ParentLink="PortDeclaration_CLRAttribute" LowerBound="43.1" HigherBound="44.1">
+                <om:Element Type="LogicalBindingAttribute" OID="77e2f19d-0308-4bce-b0c4-429e0fef4c99" ParentLink="PortDeclaration_CLRAttribute" LowerBound="47.1" HigherBound="48.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
@@ -425,6 +452,10 @@ module OutboundfromFhirServer
     {
         body CommonSchemas.servicerequest ServiceRequestMessagePart;
     };
+    internal messagetype ListMultipartType
+    {
+        body System.Collections.Generic.IList`1 ListMessagePart;
+    };
     public porttype ReportRequestPortType
     {
         requestresponse CreateReport
@@ -450,11 +481,13 @@ module OutboundfromFhirServer
         port implements ReportRequestPortType ReportRequestPort;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port uses FHIRPortType FHIRPort;
+        message ListMultipartType SortedList;
         message ObservationMultipartType Observation;
         message QueryMultipartType FhirRestOperation;
         message ReportMultipartType DiagnosticReport;
         message ServiceRequestMultipartType ServiceRequest;
         message CommonSchemas.bundle Bundle;
+        System.Collections.Generic.IList`1 Variable_1;
         System.String query;
         System.String patientid;
         System.String encounterid;
@@ -486,6 +519,7 @@ module OutboundfromFhirServer
                     scope
                     {
                         System.Decimal count;
+                        System.Int32 intcounter;
                         body
                         {
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("3bdb1ff4-0f58-4d03-8121-74a50f6ff0ff")]
@@ -494,35 +528,36 @@ module OutboundfromFhirServer
                             receive (FHIRPort.GET, Bundle);
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("87bb8b86-9d59-498b-8d31-6c6b14aa133b")]
                             count = Bundle.total.value;
-                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("91743232-3d3d-4043-a04d-396779aba85f")]
-                            scope
+                            intcounter = System.Convert.ToInt32( count);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("041e112a-c3ed-4526-81a7-950cb3c8fc5d")]
+                            if (count > 0)
                             {
-                                message System.Collections.Generic.SortedSet`1 SortedList;
-                                System.Collections.Generic.SortedList`2 sortedList;
-                                body
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("91743232-3d3d-4043-a04d-396779aba85f")]
+                                scope
                                 {
-                                    sortedList = new System.Collections.Generic.SortedList`2();
-                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b91754f2-3829-4e3c-991e-1dd39384a221")]
-                                    while ((Bundle.total.value <= count))
+                                    System.Collections.Generic.IList`1 sortedList;
+                                    body
                                     {
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2e8db95-6f13-4b58-a804-5b66bc93274c")]
-                                        sortedList.Add(count, xpath("/*[local-name()='Bundle' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='entry' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='response' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='outcome' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='<Any>' and namespace-uri()='']"));
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e6e2d28-5d51-4472-9ea9-96ece273e5ed")]
-                                        count = count + count;
-                                    }
-                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc07faeb-a36e-4a21-b051-4ce21322cb10")]
-                                    construct SortedList
-                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b91754f2-3829-4e3c-991e-1dd39384a221")]
+                                        while ((Bundle.total.value <= intcounter))
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2e8db95-6f13-4b58-a804-5b66bc93274c")]
+                                            sortedList.Insert(intcounter,xpath("/*[local-name()='Bundle' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='entry' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='response' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='outcome' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='<Any>' and namespace-uri()='' and count() = {intcounter})"));
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e6e2d28-5d51-4472-9ea9-96ece273e5ed")]
+                                            intcounter = intcounter + intcounter;
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc07faeb-a36e-4a21-b051-4ce21322cb10")]
+                                        construct SortedList
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("edd89e9a-d8d2-4496-893c-edb1d6d660b0")]
+                                            SortedList.ListMessagePart = sortedList;
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f878b544-11ff-470b-8609-8452ada1a72f")]
+                                        construct DiagnosticReport
+                                        {
 
-#error "The expression that you have entered is not valid."
-                                    }
-                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f9f54302-15d5-4ccb-9c2e-947477b395bb")]
-                                    construct DiagnosticReport
-                                    {
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3737b74b-83f0-4c38-92c6-936a57ee1c3e")]
-                                        transform (DiagnosticReport.DiagnosticReportMessagePart) = OutboundfromFhirServer.Observations__to_Report (Bundle);
-
-#error "The expression that you have entered is not valid."
+#error "Missing or invalid mapping configuration."
+                                        }
                                     }
                                 }
                             }
