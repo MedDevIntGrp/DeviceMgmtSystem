@@ -89,6 +89,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="devicemgmt.snk" />
+    <Schema Include="twin2.xsd">
+      <TypeName>twin2</TypeName>
+      <Namespace>InboundDeviceData</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
   </ItemGroup>
   <ItemGroup>
     <XLang Include="ProcessDeviceInfo - Copy.odx">
@@ -102,6 +107,9 @@
       <Project>{823fa683-678e-4a84-aa2e-e5f7488633c9}</Project>
       <Name>MedicalDeviceSchema</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SampleTwins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

@@ -1,0 +1,130 @@
+{
+	"deviceId": "med1",
+	"etag": "AAAAAAAAAAE=",
+	"deviceEtag": "MTQwOTA5MTA1",
+	"status": "enabled",
+	"statusUpdateTime": "0001-01-01T00:00:00Z",
+	"connectionState": "Connected",
+	"lastActivityTime": "2020-05-13T23:15:06.918855Z",
+	"cloudToDeviceMessageCount": 0,
+	"authenticationType": "sas",
+	"x509Thumbprint": {
+		"primaryThumbprint": null,
+		"secondaryThumbprint": null
+	},
+	"version": 4,
+	"properties": {
+		"desired": {
+			"$metadata": {
+				"$lastUpdated": "2020-04-09T19:32:15.9187693Z"
+			},
+			"$version": 1
+		},
+		"reported": {
+			"Protocol": "MQTT",
+			"SupportedMethods": "Reboot,FirmwareUpdate,LedColor",
+			"Telemetry": {
+				"chiller-sensors;v1": {
+					"Interval": "00:00:05",
+					"MessageTemplate": "{\"temperature\":${temperature},\"temperature_unit\":\"${temperature_unit}\", \"humidity\":${humidity},\"humidity_unit\":\"${humidity_unit}\",\"pressure\":${pressure},\"pressure_unit\":\"${pressure_unit}\"}",
+					"MessageSchema": {
+						"Name": "chiller-sensors;v1",
+						"Format": "JSON",
+						"Fields": {
+							"temperature": "Double",
+							"temperature_unit": "Text",
+							"humidity": "Double",
+							"humidity_unit": "Text",
+							"pressure": "Double",
+							"pressure_unit": "Text"
+						}
+					}
+				}
+			},
+			"Type": "Chiller",
+			"Firmware": "1.0.0",
+			"Model": "AZ3166",
+			"FirmwareUpdateStatus": "",
+			"Location": "Madrid",
+			"Latitude": 40.418371,
+			"Longitude": -3.797997,
+			"$metadata": {
+				"$lastUpdated": "2020-05-13T23:21:26.8811926Z",
+				"Protocol": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"SupportedMethods": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Telemetry": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z",
+					"chiller-sensors;v1": {
+						"$lastUpdated": "2020-05-13T23:21:26.8811926Z",
+						"Interval": {
+							"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+						},
+						"MessageTemplate": {
+							"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+						},
+						"MessageSchema": {
+							"$lastUpdated": "2020-05-13T23:21:26.8811926Z",
+							"Name": {
+								"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+							},
+							"Format": {
+								"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+							},
+							"Fields": {
+								"$lastUpdated": "2020-05-13T23:21:26.8811926Z",
+								"temperature": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								},
+								"temperature_unit": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								},
+								"humidity": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								},
+								"humidity_unit": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								},
+								"pressure": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								},
+								"pressure_unit": {
+									"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+								}
+							}
+						}
+					}
+				},
+				"Type": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Firmware": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Model": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"FirmwareUpdateStatus": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Location": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Latitude": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				},
+				"Longitude": {
+					"$lastUpdated": "2020-05-13T23:21:26.8811926Z"
+				}
+			},
+			"$version": 3
+		}
+	},
+	"capabilities": {
+		"iotEdge": true
+	},
+	"deviceScope": "ms-azure-iot-edge://med1-637220575359187693"
+}

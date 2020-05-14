@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://InboundDeviceData.twin2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceId" type="xs:string" />
+        <xs:element minOccurs="0" name="etag" type="xs:string" />
+        <xs:element minOccurs="0" name="deviceEtag" type="xs:string" />
+        <xs:element minOccurs="0" name="status" type="xs:string" />
+        <xs:element minOccurs="0" name="statusUpdateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="connectionState" type="xs:string" />
+        <xs:element minOccurs="0" name="lastActivityTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="cloudToDeviceMessageCount" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="authenticationType" type="xs:string" />
+        <xs:element minOccurs="0" name="x509Thumbprint">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="primaryThumbprint" />
+              <xs:element minOccurs="0" name="secondaryThumbprint" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="version" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="properties">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="desired">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="_x0024_metadata">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="_x0024_version" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="reported">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="Protocol" type="xs:string" />
+                    <xs:element minOccurs="0" name="SupportedMethods" type="xs:string" />
+                    <xs:element minOccurs="0" name="Telemetry">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="chiller-sensors_x003B_v1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="Interval" type="xs:time" />
+                                <xs:element minOccurs="0" name="MessageTemplate" type="xs:string" />
+                                <xs:element minOccurs="0" name="MessageSchema">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="Name" type="xs:string" />
+                                      <xs:element minOccurs="0" name="Format" type="xs:string" />
+                                      <xs:element minOccurs="0" name="Fields">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="temperature" type="xs:string" />
+                                            <xs:element minOccurs="0" name="temperature_unit" type="xs:string" />
+                                            <xs:element minOccurs="0" name="humidity" type="xs:string" />
+                                            <xs:element minOccurs="0" name="humidity_unit" type="xs:string" />
+                                            <xs:element minOccurs="0" name="pressure" type="xs:string" />
+                                            <xs:element minOccurs="0" name="pressure_unit" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Type" type="xs:string" />
+                    <xs:element minOccurs="0" name="Firmware" type="xs:string" />
+                    <xs:element minOccurs="0" name="Model" type="xs:string" />
+                    <xs:element minOccurs="0" name="FirmwareUpdateStatus" type="xs:string" />
+                    <xs:element minOccurs="0" name="Location" type="xs:string" />
+                    <xs:element minOccurs="0" name="Latitude" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="Longitude" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="_x0024_metadata">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                          <xs:element minOccurs="0" name="Protocol">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="SupportedMethods">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Telemetry">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                <xs:element minOccurs="0" name="chiller-sensors_x003B_v1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                      <xs:element minOccurs="0" name="Interval">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="MessageTemplate">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="MessageSchema">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                            <xs:element minOccurs="0" name="Name">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="Format">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="Fields">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                  <xs:element minOccurs="0" name="temperature">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="temperature_unit">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="humidity">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="humidity_unit">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="pressure">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="pressure_unit">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Type">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Firmware">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Model">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="FirmwareUpdateStatus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Location">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Latitude">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Longitude">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="_x0024_lastUpdated" type="xs:dateTime" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="_x0024_version" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="capabilities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="iotEdge" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="deviceScope" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
