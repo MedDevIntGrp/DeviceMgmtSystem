@@ -111,6 +111,13 @@
   <ItemGroup>
     <Folder Include="SampleTwins\" />
   </ItemGroup>
+  <ItemGroup>
+    <Map Include="PositsitionalDevice1234_to_Observation.btm">
+      <TypeName>PositsitionalDevice1234_to_Observation</TypeName>
+      <Namespace>InboundDeviceData</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>
