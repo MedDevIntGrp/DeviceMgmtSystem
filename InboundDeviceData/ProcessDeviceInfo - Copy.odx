@@ -2,41 +2,41 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="31995b6b-b3c6-4f78-a342-ae9737c00b3c" LowerBound="1.1" HigherBound="47.1">
+    <om:Element Type="Module" OID="31995b6b-b3c6-4f78-a342-ae9737c00b3c" LowerBound="1.1" HigherBound="43.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="InboundDeviceData" />
         <om:Property Name="Signal" Value="False" />
-        <om:Element Type="PortType" OID="cce90c7c-756e-4f77-bac6-12567c4d34e3" ParentLink="Module_PortType" LowerBound="8.1" HigherBound="15.1">
+        <om:Element Type="PortType" OID="cce90c7c-756e-4f77-bac6-12567c4d34e3" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
             <om:Property Name="Synchronous" Value="False" />
             <om:Property Name="TypeModifier" Value="Public" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="InboundDevicePortType_1" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="c99f176a-558b-4d4e-9578-0f28d22383d1" ParentLink="PortType_OperationDeclaration" LowerBound="10.1" HigherBound="14.1">
+            <om:Element Type="OperationDeclaration" OID="c99f176a-558b-4d4e-9578-0f28d22383d1" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
                 <om:Property Name="OperationType" Value="OneWay" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="ParseDeviceData" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="MessageRef" OID="07b97cbc-e3ef-4f12-84c3-877ab74c894a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="12.13" HigherBound="12.28">
-                    <om:Property Name="Ref" Value="InboundDeviceData.MultipartType_1" />
+                <om:Element Type="MessageRef" OID="07b97cbc-e3ef-4f12-84c3-877ab74c894a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.45">
+                    <om:Property Name="Ref" Value="DeviceMgmtSchemas.TwinSchemaJSON" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
-                    <om:Property Name="Signal" Value="False" />
+                    <om:Property Name="Signal" Value="True" />
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="PortType" OID="393b4eb3-4671-4311-bec5-fd990bfd0599" ParentLink="Module_PortType" LowerBound="15.1" HigherBound="22.1">
+        <om:Element Type="PortType" OID="393b4eb3-4671-4311-bec5-fd990bfd0599" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
             <om:Property Name="Synchronous" Value="False" />
             <om:Property Name="TypeModifier" Value="Public" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="ObservationSendPortType_1" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="13a1d7eb-2374-45b8-8d4e-fe881186d09a" ParentLink="PortType_OperationDeclaration" LowerBound="17.1" HigherBound="21.1">
+            <om:Element Type="OperationDeclaration" OID="13a1d7eb-2374-45b8-8d4e-fe881186d09a" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
                 <om:Property Name="OperationType" Value="OneWay" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="POST" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="MessageRef" OID="63beb0df-41a1-49de-98bb-5a7389732c72" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="19.13" HigherBound="19.53">
+                <om:Element Type="MessageRef" OID="63beb0df-41a1-49de-98bb-5a7389732c72" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.53">
                     <om:Property Name="Ref" Value="DeviceMgmtOperationalSchemas.observation" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
@@ -44,39 +44,26 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="PortType" OID="f9904af9-44f2-4fbe-8224-6a54f940e4c8" ParentLink="Module_PortType" LowerBound="22.1" HigherBound="29.1">
+        <om:Element Type="PortType" OID="f9904af9-44f2-4fbe-8224-6a54f940e4c8" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
             <om:Property Name="Synchronous" Value="False" />
             <om:Property Name="TypeModifier" Value="Public" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="PortType_1" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="8e64037c-39f6-4d9a-8c93-a7f1ae99994f" ParentLink="PortType_OperationDeclaration" LowerBound="24.1" HigherBound="28.1">
+            <om:Element Type="OperationDeclaration" OID="8e64037c-39f6-4d9a-8c93-a7f1ae99994f" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
                 <om:Property Name="OperationType" Value="OneWay" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Operation_1" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="MessageRef" OID="24aa0a60-93ad-457a-bda9-d454f5a4b6fe" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="26.13" HigherBound="26.28">
-                    <om:Property Name="Ref" Value="InboundDeviceData.MultipartType_1" />
+                <om:Element Type="MessageRef" OID="24aa0a60-93ad-457a-bda9-d454f5a4b6fe" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.45">
+                    <om:Property Name="Ref" Value="DeviceMgmtSchemas.TwinSchemaJSON" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
-                    <om:Property Name="Signal" Value="False" />
+                    <om:Property Name="Signal" Value="True" />
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="MultipartMessageType" OID="47505688-07d5-4847-8b73-8d957cd9e8e4" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
-            <om:Property Name="TypeModifier" Value="Internal" />
-            <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="MultipartType_1" />
-            <om:Property Name="Signal" Value="False" />
-            <om:Element Type="PartDeclaration" OID="95735d18-311b-402e-80e6-bb769f774a54" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
-                <om:Property Name="ClassName" Value="MedicalDeviceManagement.DeviceTwin" />
-                <om:Property Name="IsBodyPart" Value="True" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="DeviceTwin" />
-                <om:Property Name="Signal" Value="True" />
-            </om:Element>
-        </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="989ea42e-af33-4b98-846c-56d42f751a0a" ParentLink="Module_ServiceDeclaration" LowerBound="29.1" HigherBound="46.1">
+        <om:Element Type="ServiceDeclaration" OID="989ea42e-af33-4b98-846c-56d42f751a0a" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="42.1">
             <om:Property Name="InitializedTransactionType" Value="False" />
             <om:Property Name="IsInvokable" Value="True" />
             <om:Property Name="TypeModifier" Value="Public" />
@@ -85,7 +72,7 @@
             <om:Property Name="Signal" Value="False" />
             <om:Element Type="ServiceBody" OID="45bce96a-1a35-4196-bfbc-67e63e894214" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="d330aab9-26d8-4eb6-a0c5-a42193b51172" ParentLink="ServiceBody_Statement" LowerBound="40.1" HigherBound="42.1">
+                <om:Element Type="Receive" OID="d330aab9-26d8-4eb6-a0c5-a42193b51172" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="38.1">
                     <om:Property Name="Activate" Value="False" />
                     <om:Property Name="PortName" Value="InboundDevicePort" />
                     <om:Property Name="MessageName" Value="DeviceTwinMessage" />
@@ -95,7 +82,7 @@
                     <om:Property Name="Name" Value="Receive_DeviceTwinMessage" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="Send" OID="0d99d2a0-ed2f-47ea-ad0a-77d6b4e6cc59" ParentLink="ServiceBody_Statement" LowerBound="42.1" HigherBound="44.1">
+                <om:Element Type="Send" OID="0d99d2a0-ed2f-47ea-ad0a-77d6b4e6cc59" ParentLink="ServiceBody_Statement" LowerBound="38.1" HigherBound="40.1">
                     <om:Property Name="PortName" Value="Port_1" />
                     <om:Property Name="MessageName" Value="DeviceTwinMessage" />
                     <om:Property Name="OperationName" Value="Operation_1" />
@@ -105,7 +92,7 @@
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="263e11dc-75bf-45fb-8165-41f50247f094" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+            <om:Element Type="PortDeclaration" OID="263e11dc-75bf-45fb-8165-41f50247f094" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
                 <om:Property Name="PortModifier" Value="Implements" />
                 <om:Property Name="Orientation" Value="Left" />
                 <om:Property Name="PortIndex" Value="-1" />
@@ -117,11 +104,11 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="InboundDevicePort" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="3706339f-bf24-4788-8a52-eaabbe3a7e57" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                <om:Element Type="LogicalBindingAttribute" OID="3706339f-bf24-4788-8a52-eaabbe3a7e57" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="f448e778-cb47-4254-b8db-4dcce0e0e1eb" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="34.1" HigherBound="36.1">
+            <om:Element Type="PortDeclaration" OID="f448e778-cb47-4254-b8db-4dcce0e0e1eb" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
                 <om:Property Name="PortModifier" Value="Uses" />
                 <om:Property Name="Orientation" Value="Right" />
                 <om:Property Name="PortIndex" Value="-1" />
@@ -133,18 +120,18 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Port_1" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="059993c5-b3a3-4be0-b2f6-3669d2a6b0c4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="34.1" HigherBound="35.1">
+                <om:Element Type="LogicalBindingAttribute" OID="059993c5-b3a3-4be0-b2f6-3669d2a6b0c4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="34a4459e-f430-4eff-99ef-b026e18ce0f8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="36.1" HigherBound="37.1">
-                <om:Property Name="Type" Value="InboundDeviceData.MultipartType_1" />
+            <om:Element Type="MessageDeclaration" OID="34a4459e-f430-4eff-99ef-b026e18ce0f8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="Type" Value="DeviceMgmtSchemas.TwinSchemaJSON" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="DeviceTwinMessage" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="d9230d2e-102e-46e9-a3d0-58a5ae7f3f29" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="37.1" HigherBound="38.1">
+            <om:Element Type="MessageDeclaration" OID="d9230d2e-102e-46e9-a3d0-58a5ae7f3f29" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="33.1" HigherBound="34.1">
                 <om:Property Name="Type" Value="DeviceMgmtOperationalSchemas.observation" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -158,15 +145,11 @@
 [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
 module InboundDeviceData
 {
-    internal messagetype MultipartType_1
-    {
-        body MedicalDeviceManagement.DeviceTwin DeviceTwin;
-    };
     public porttype InboundDevicePortType_1
     {
         oneway ParseDeviceData
         {
-            MultipartType_1
+            DeviceMgmtSchemas.TwinSchemaJSON
         };
     };
     public porttype ObservationSendPortType_1
@@ -180,7 +163,7 @@ module InboundDeviceData
     {
         oneway Operation_1
         {
-            MultipartType_1
+            DeviceMgmtSchemas.TwinSchemaJSON
         };
     };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
@@ -190,7 +173,7 @@ module InboundDeviceData
         port implements InboundDevicePortType_1 InboundDevicePort;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port uses PortType_1 Port_1;
-        message MultipartType_1 DeviceTwinMessage;
+        message DeviceMgmtSchemas.TwinSchemaJSON DeviceTwinMessage;
         message DeviceMgmtOperationalSchemas.observation Observation;
         body ()
         {
